@@ -32,6 +32,6 @@ export default [...compat.extends('plugin:vue/strongly-recommended'), {
     },
   },
   rules: {
-
+    'vue/multi-word-component-names': 'off',
   },
 }];

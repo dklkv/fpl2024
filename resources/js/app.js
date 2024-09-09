@@ -1,8 +1,8 @@
 import './bootstrap';
 import { createApp } from 'vue';
-import App from 'views/App.vue';
 import router from './router';
+import Page from "./views/Page.vue";
 
-createApp(App)
+createApp(Page)
   .use(router)
   .mount('#app');

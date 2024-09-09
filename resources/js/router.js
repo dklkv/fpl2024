@@ -1,6 +1,17 @@
-import { createRouter } from "vue-router";
-import routes from './routes';
+import {createRouter, createWebHistory} from "vue-router";
+import Ticker from "./views/Pages/Ticker.vue";
 
-const router = createRouter(routes);
+const routes = [
+  {
+      path: '/ticker',
+      name: 'ticker',
+      component: Ticker,
+  },
+];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
 
 export default router;
